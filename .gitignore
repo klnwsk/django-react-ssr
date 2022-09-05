@@ -9,3 +9,6 @@ build/
 dist/
 helloworld.db
 local_settings.py
+bin/
+lib/
+**/node_modules

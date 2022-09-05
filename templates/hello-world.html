@@ -1,0 +1,9 @@
+{% load static %} {% block content %}
+<div>{{html | safe}}</div>
+{% endblock content %} {% block base_footer %}
+<script>
+  window.pageProps = JSON.parse("{{ data| safe | escapejs }}");
+  window.mountApp = document.getElementById("home-component-react");
+</script>
+<script src="{% static 'js/client-build/App.js' %}" defer async></script>
+{% endblock base_footer %}

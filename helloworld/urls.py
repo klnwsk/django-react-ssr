@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Hello, world!
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
+
+    path('node/', views.test_page, name='test_page')
 ]
