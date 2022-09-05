@@ -12,3 +12,4 @@ local_settings.py
 bin/
 lib/
 **/node_modules
+static/js/client-build
